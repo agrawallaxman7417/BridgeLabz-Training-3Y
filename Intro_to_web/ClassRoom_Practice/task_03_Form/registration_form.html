@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Student Registration Form</h1>
+        <table  width="100%"   border="1"  cellpadding="10" cellspacing="0" align="center">
+            <tr >
+                <th colspan="2">Registration Form</th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="name">Full Name</label>
+                </th>
+                <th>
+                    <input type="text" placeholder="Enter Your Name">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Email">Email</label>
+                </th>
+                <th>
+                    <input type="email" placeholder="abc@gmail.com">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="number">Phone Number</label>
+                </th>
+                <th>
+                    <input type="number" placeholder="9876543210">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="date">Date of Birth</label>
+                </th>
+                <th>
+                    <input type="date" placeholder="dd-mm-yy">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender</label>
+                </th>
+                <th>
+                    <input type="radio" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender">
+                    <label for="other">Other</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="skills">Skills</label>
+                </th>
+                <th>
+                    <input type="radio" name="skills1">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="skills2">
+                    <label for="css">CSS</label>
+                    <input type="radio" name="skills3">
+                    <label for="js">JAVASCRIPT</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="course">Course</label>
+                </th>
+                <th>
+                    <select name="course" id="course">
+                        <option value="select">--Select Course--</option>
+                        <option value="data">Data Science</option>
+                        <option value="full">Full Stack</option>
+                        <option value="cloud">Cloud</option>
+                        <option value="aiml">AIML</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="address">Address</label>
+                </th>
+                <th>
+                     <textarea id="address" name="address" rows="4" cols="50"  autocomplete="street-address"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="resume">Resume</label>
+                </th>
+                <th>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2" align="center">
+                    <button type="submit">Register</button>
+                    <button type="submit">Reset</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
