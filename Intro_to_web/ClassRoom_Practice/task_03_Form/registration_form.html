@@ -3,6 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            margin: 20px;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        *{
+            background-color: grey;
+            color: aliceblue;
+        }
+        input::placeholder {
+            color: white;
+            opacity: 1;
+        }
+        button:hover{
+            color: black;
+            background-color:rgb(97, 193, 175);
+        }
+        table {
+            border: 2px solid black; /* Table का outer border */
+            border-collapse: collapse; /* Double borders हटाने के लिए */
+        }
+
+        th, td {
+            border: 1px solid black; /* Cells का border */
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -62,11 +89,11 @@
                     <label for="skills">Skills</label>
                 </th>
                 <th>
-                    <input type="radio" name="skills1">
+                    <input type="checkbox" name="skills1">
                     <label for="html">HTML</label>
-                    <input type="radio" name="skills2">
+                    <input type="checkbox" name="skills2">
                     <label for="css">CSS</label>
-                    <input type="radio" name="skills3">
+                    <input type="checkbox" name="skills3">
                     <label for="js">JAVASCRIPT</label>
                 </th>
             </tr>
@@ -108,5 +135,6 @@
             </tr>
         </table>
     </div>
+
 </body>
 </html>
