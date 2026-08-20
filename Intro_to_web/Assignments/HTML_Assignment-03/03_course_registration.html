@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <!-- Course registration heading -->
+    <h1>Course Registration</h1>
+
+    <!-- Registration fields grouped using fieldset and legend -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Student Information</legend>
+
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option value="web-development" selected>Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="database">Database Management</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Register">
+            </p>
+        </fieldset>
+    </form>
+
+    <!-- Available course schedules -->
+    <h2>Available Course Schedules</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Mr. Sharma</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Ms. Gupta</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 1:00 PM</td>
+                <td>Mr. Verma</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
