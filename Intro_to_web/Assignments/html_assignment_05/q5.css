@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #172033; }
+.pricing { padding: 60px 7%; text-align: center; }
+.pricing > h1 { font-size: 2.8rem; margin-bottom: 45px; }
+.plans { display: flex; gap: 25px; align-items: stretch; }
+.plan {
+    flex: 1;
+    min-height: 430px;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 16px;
+    transition: transform .25s ease, background-color .25s ease;
+}
+.plan:hover { transform: scale(1.04); background: #e0f2fe; }
+.plan.popular { border: 3px solid #2563eb; }
+.price { font-size: 2rem; font-weight: bold; margin: 20px 0; }
+.plan ul { flex: 1; text-align: left; line-height: 2; }
+.plan a { padding: 13px; border-radius: 8px; background: #2563eb; color: white; text-decoration: none; }
+@media (max-width: 700px) { .plans { flex-direction: column; } }

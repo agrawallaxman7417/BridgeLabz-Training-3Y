@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Layout</title>
+    <link rel="stylesheet" href="q10.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>BrightSpace</h1>
+        <nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content"><h2>Welcome to BrightSpace</h2><p>Simple ideas. Thoughtful design. Better experiences.</p></div>
+        </section>
+
+        <section id="about" class="about">
+            <div><h2>About Us</h2><p>We create practical digital experiences with clean structure, responsive layouts and accessible interfaces.</p></div>
+            <img src="https://picsum.photos/600/450?random=51" alt="Team working">
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <article><h3>Web Design</h3><p>Modern and responsive page designs.</p></article>
+                <article><h3>Development</h3><p>Semantic and maintainable front-end code.</p></article>
+                <article><h3>Consulting</h3><p>Practical advice for improving digital products.</p></article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form><input type="text" placeholder="Name" required><input type="email" placeholder="Email" required><textarea placeholder="Message" rows="5" required></textarea><button type="submit">Send</button></form>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 BrightSpace. All rights reserved.</p></footer>
+    <a class="back-top" href="#home">↑</a>
+</body>
+</html>

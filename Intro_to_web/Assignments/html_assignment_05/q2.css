@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; background: #f7efe2; color: #342415; }
+header { padding: 25px 6%; background: #7b2d26; color: white; }
+header h1 { font-size: 2.5rem; font-weight: 700; }
+nav a { color: white; margin-right: 24px; text-decoration: none; font-weight: bold; }
+section {
+    min-height: 70vh;
+    padding: 12vh 8%;
+    margin: 0;
+    border-bottom: 5px solid #f7efe2;
+}
+section h2 { font-size: 3rem; font-weight: 700; margin-top: 0; }
+section p { max-width: 700px; font-size: 1.2rem; line-height: 1.8; }
+.linear { background: linear-gradient(120deg, #e8b86d, #f4e4c1, #c75b39); }
+.radial { background: radial-gradient(circle, #fff4c4, #d88c5a, #733b2b); }
+.parallax-one {
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("https://picsum.photos/1600/900?random=21") center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+.parallax-two {
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("https://picsum.photos/1600/900?random=22") center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+footer { padding: 30px; text-align: center; background: #342415; color: white; }
