@@ -1,0 +1,59 @@
+/* Grid gives every member an equal and balanced space. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #182033;
+}
+
+.team-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.team-section > h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    margin: 0.5rem;
+    min-height: 250px;
+    border: 2px solid #b8c2d1;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card h3 {
+    color: #315f9c;
+}
+
+.lead {
+    background: #e5efff;
+    border: 3px dashed #315f9c;
+}
+
+@media (max-width: 600px) {
+    .team {
+        grid-template-columns: 1fr;
+    }
+}

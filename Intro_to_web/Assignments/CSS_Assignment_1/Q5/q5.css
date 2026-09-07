@@ -1,0 +1,84 @@
+/* Flexbox keeps all plans equal in height and aligned. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #182033;
+}
+
+.pricing-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.pricing-page > h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plans {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.plan {
+    flex: 1;
+    min-height: 430px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 2px solid #ccd4df;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
+    transition: transform .3s ease, background-color .3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.04);
+    background: #eaf2ff;
+}
+
+.popular {
+    border: 3px solid #2864c7;
+    background: #e6f0ff;
+}
+
+.price {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+.plan ul {
+    padding-left: 1.2rem;
+    line-height: 2;
+}
+
+.plan a {
+    margin-top: auto;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    background: #2864c7;
+    color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 750px) {
+    .plans {
+        flex-direction: column;
+    }
+}

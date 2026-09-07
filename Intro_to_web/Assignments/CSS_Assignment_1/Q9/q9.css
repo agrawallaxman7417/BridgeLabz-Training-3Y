@@ -1,0 +1,65 @@
+/* CSS columns create the newspaper-style reading flow. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 3rem 5%;
+    background: #d9d5c9;
+    color: #25231f;
+    font-family: Georgia, serif;
+}
+
+.newspaper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2.5rem;
+    background: #f8f4e8;
+}
+
+.newspaper h1 {
+    column-span: all;
+    text-align: center;
+    font-family: Impact, sans-serif;
+    letter-spacing: .15rem;
+    border-bottom: 4px double #25231f;
+    padding-bottom: 1rem;
+    margin: 0 0 2rem;
+}
+
+.newspaper p {
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: justify;
+}
+
+.newspaper {
+    column-count: 3;
+    column-gap: 2.5rem;
+}
+
+.article-image {
+    width: 45%;
+    float: left;
+    margin: 0 1rem .7rem 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .newspaper {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .newspaper {
+        column-count: 1;
+    }
+
+    .article-image {
+        width: 100%;
+        float: none;
+        margin: 0 0 1rem;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete CSS Layout</title>
+    <link rel="stylesheet" href="q10.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Creative Studio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Creative Studio</h2>
+                <p>We build modern and responsive digital experiences.</p>
+            </div>
+            <span class="badge">New</span>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>We combine thoughtful design and reliable development to create useful websites and digital products.</p>
+            </div>
+            <img src="https://picsum.photos/600/400?random=70" alt="Creative workspace">
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-row">
+                <article><h3>Web Design</h3><p>Clean interfaces built for users.</p></article>
+                <article><h3>Development</h3><p>Responsive and maintainable websites.</p></article>
+                <article><h3>Consulting</h3><p>Practical guidance for digital projects.</p></article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" aria-label="Name">
+                <input type="email" placeholder="Email" aria-label="Email">
+                <textarea rows="5" placeholder="Message" aria-label="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creative Studio</p>
+    </footer>
+</body>
+</html>

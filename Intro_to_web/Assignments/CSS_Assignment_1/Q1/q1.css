@@ -1,0 +1,119 @@
+/* Fixed header and flexible page layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f4f7fb;
+    color: #172033;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    min-height: 70px;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #132238;
+    color: white;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding-top: 90px;
+}
+
+.hero {
+    min-height: 65vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.bio {
+    width: 45%;
+}
+
+.bio h2 {
+    font-size: 2rem;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+.hero img {
+    width: 30%;
+    min-width: 220px;
+    border-radius: 50%;
+    border: 6px solid #2f6fed;
+}
+
+.contact {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background: #dce9ff;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 1.2rem;
+    text-align: center;
+    background: #132238;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3vh 0;
+    }
+
+    .bio {
+        width: 90%;
+    }
+
+    .hero img {
+        width: 45%;
+    }
+}

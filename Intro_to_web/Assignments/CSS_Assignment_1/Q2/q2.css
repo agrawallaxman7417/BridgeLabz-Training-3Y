@@ -1,0 +1,84 @@
+/* Each section has its own visual treatment. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #172033;
+    background: #eee;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    background: #182b49;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main section {
+    min-height: 65vh;
+    width: 100%;
+    padding: 10vh 10%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history {
+    background: linear-gradient(120deg, #ffd6a5, #ffadad);
+    background-attachment: fixed;
+}
+
+.culture {
+    background: radial-gradient(circle at center, #d8f3dc, #74c69d);
+    background-attachment: fixed;
+}
+
+.places {
+    background: linear-gradient(rgba(20, 40, 70, .75), rgba(20, 40, 70, .75)),
+                url("https://picsum.photos/1600/900?random=20") center/cover;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+p {
+    max-width: 700px;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, .15);
+    line-height: 1.8;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background: #182b49;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    main section {
+        min-height: 50vh;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
