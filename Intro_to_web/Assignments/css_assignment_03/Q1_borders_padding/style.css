@@ -1,0 +1,14 @@
+/* Basic page styling */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #222; }
+header, footer { text-align: center; padding: 20px; background: #182848; color: white; }
+main { padding: 50px 20px; }
+/* Flexbox keeps all demonstration boxes horizontal */
+.box-container { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
+.box { width: 170px; min-height: 150px; text-align: center; background: white; transition: border-color 0.4s ease; }
+.box:hover { border-color: #e63946; }
+.solid { border: 6px solid #3155a4; padding: 10px; }
+.dashed { border: 6px dashed #3155a4; padding: 20px; }
+.double { border: 8px double #3155a4; padding: 30px; }
+.groove { border: 8px groove #3155a4; padding: 15px; }
+.rounded { border: 6px solid #3155a4; border-radius: 25px; padding: 20px; }

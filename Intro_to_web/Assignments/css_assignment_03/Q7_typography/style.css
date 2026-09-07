@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8fafc; color: #1e293b; font-family: Arial, sans-serif; }
+header, footer { text-align: center; padding: 20px; background: #1e293b; color: white; }
+article { max-width: 800px; margin: 50px auto; padding: 35px; background: white; line-height: 1.8; }
+h2 { font-size: 2em; letter-spacing: 2px; text-align: center; }
+p { font-size: 1.1em; letter-spacing: .4px; text-align: justify; }
+strong { color: #b91c1c; font-weight: 800; }
+em { color: #7c3aed; }
+mark { background: #fde68a; color: #78350f; padding: 2px 5px; }
+.serif { font-family: Georgia, serif; font-weight: 600; }
+.mono { font-family: "Courier New", monospace; font-size: 1em; }
+/* Pseudo-elements emphasize the first letter and first line */
+article p:first-of-type::first-letter { font-size: 2.8em; font-weight: bold; float: left; line-height: .9; margin-right: 5px; }
+article p:first-of-type::first-line { letter-spacing: 1px; }

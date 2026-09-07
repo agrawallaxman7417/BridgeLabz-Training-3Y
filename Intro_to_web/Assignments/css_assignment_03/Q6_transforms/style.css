@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; text-align: center; background: #f1f5f9; }
+header, footer { padding: 18px; background: #0f172a; color: white; }
+.transform-container { display: flex; justify-content: center; align-items: center; gap: 45px; flex-wrap: wrap; padding: 80px 20px; }
+.demo { width: 130px; }
+.box { height: 110px; display: flex; align-items: center; justify-content: center; background: #6366f1; color: white; border-radius: 12px; transition: all 0.4s ease; }
+.rotate:hover { transform: rotate(25deg); }
+.scale:hover { transform: scale(1.25); }
+.translate:hover { transform: translate(25px, -20px); }
+.skew:hover { transform: skew(15deg, 8deg); }
+.demo p { font-weight: bold; }

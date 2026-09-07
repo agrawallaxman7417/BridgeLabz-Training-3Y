@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; }
+header, footer { text-align: center; padding: 18px; background: #334155; color: white; }
+.selector-demo { max-width: 700px; margin: 50px auto; padding: 30px; background: white; border-radius: 12px; }
+/* Attribute selector: selects only inputs whose type is text */
+input[type="text"] { border: 3px solid #2563eb; }
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] { color: #15803d; font-weight: bold; }
+/* Pseudo-classes: hover, focus and nth-child */
+a:hover { text-decoration: none; background: #fde68a; }
+input:focus { outline: 3px solid #93c5fd; }
+.items li:nth-child(2) { background: #dbeafe; }
+/* Pseudo-elements add generated content */
+h2::before { content: "★ "; }
+h2::after { content: " ★"; }
+/* Descendant combinator: span inside .note */
+.note span { font-weight: bold; }
+/* Child combinator: direct li children */
+.items > li { padding: 8px; }
+/* Adjacent sibling: the paragraph immediately after h2 */
+h2 + input { margin-top: 10px; }
+/* General sibling: all inputs following h2 */
+h2 ~ input { margin-bottom: 10px; }
+input { padding: 10px; margin-right: 8px; }
+a { display: inline-block; margin: 12px; padding: 8px; }

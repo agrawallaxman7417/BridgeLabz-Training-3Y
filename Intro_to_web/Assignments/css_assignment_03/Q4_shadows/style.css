@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #1f2937; }
+header, footer { text-align: center; padding: 20px; background: #111827; color: white; }
+main { padding: 60px 20px; }
+.cards { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.card { width: 280px; min-height: 210px; padding: 30px; background: white; border-radius: 15px; transition: all .4s ease; }
+.card h2 { text-shadow: 2px 2px 4px #aaa; }
+.card:hover { transform: translateY(-12px); box-shadow: 0 22px 35px rgba(0,0,0,.25); }
+.soft { box-shadow: 0 5px 20px rgba(0,0,0,.15); }
+.sharp { box-shadow: 8px 8px 0 rgba(0,0,0,.18); }
+.glow { box-shadow: 0 0 15px rgba(59,130,246,.3), 0 12px 30px rgba(0,0,0,.2); }

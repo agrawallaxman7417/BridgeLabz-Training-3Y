@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+header { position: fixed; top: 0; width: 100%; z-index: 10; text-align: center; padding: 18px; background: rgba(0,0,0,.8); color: white; }
+main { padding-top: 75px; }
+.gradient { min-height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 30px; }
+.linear { background: linear-gradient(135deg, #2563eb, #9333ea, #ec4899); background-attachment: fixed; }
+.radial { background: radial-gradient(circle, #f59e0b, #dc2626, #581c87); }
+footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 12px; background: rgba(0,0,0,.8); color: white; }
