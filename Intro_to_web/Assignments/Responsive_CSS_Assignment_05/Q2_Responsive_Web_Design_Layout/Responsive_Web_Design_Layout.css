@@ -1,0 +1,19 @@
+/* Global layout */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; background: #eef4ff; color: #172033; }
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 7%; background: #172b4d; }
+.logo { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
+nav { display: flex; gap: 22px; }
+nav a { color: white; text-decoration: none; transition: color .3s; }
+nav a:hover { color: #8fd3ff; }
+main { flex: 1; }
+.hero { text-align: center; padding: 55px 20px 30px; }
+.features { display: flex; gap: 24px; padding: 20px 7% 50px; }
+.features article { flex: 1; padding: 30px; background: white; border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,.1); transition: transform .3s ease; }
+.features article:hover { transform: scale(1.04); }
+footer { text-align: center; padding: 20px; background: #172b4d; color: white; }
+
+@media (max-width: 750px) {
+    .site-header { flex-direction: column; gap: 14px; }
+    .features { flex-direction: column; }
+}

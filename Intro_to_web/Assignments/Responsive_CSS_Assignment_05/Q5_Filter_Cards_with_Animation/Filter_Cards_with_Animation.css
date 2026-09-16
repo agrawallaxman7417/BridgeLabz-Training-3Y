@@ -1,0 +1,23 @@
+/* Profile card animation and filters */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f3ef; color: #20252b; }
+main { width: min(1100px, 92%); margin: auto; }
+header { text-align: center; padding: 45px 0 25px; }
+.profiles { display: flex; gap: 26px; }
+.profile { flex: 1; overflow: hidden; background: white; border-radius: 16px; box-shadow: 0 8px 22px rgba(0,0,0,.12); animation: fadeIn .8s ease-in-out both; transition: transform .3s ease, box-shadow .3s ease; }
+.profile:nth-child(2) { animation-delay: .2s; }
+.profile:nth-child(3) { animation-delay: .4s; }
+.profile:hover { transform: translateY(-10px); box-shadow: 0 16px 28px rgba(0,0,0,.18); }
+.profile img { width: 100%; display: block; aspect-ratio: 1; object-fit: cover; transition: filter .3s ease; }
+.gray { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.profile:hover img { filter: none; }
+.profile div { padding: 18px; text-align: center; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 800px) {
+    .profiles { flex-direction: column; max-width: 500px; margin: auto; }
+}

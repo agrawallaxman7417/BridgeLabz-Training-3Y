@@ -1,0 +1,43 @@
+/* Basic page styling */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+}
+header, footer { text-align: center; padding: 24px; }
+.gallery {
+    width: min(1200px, 92%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+figure {
+    margin: 0;
+    background: white;
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter .4s ease;
+}
+.blur { filter: blur(3px); }
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.brightness { filter: brightness(140%); }
+.contrast { filter: contrast(180%); }
+.hue { filter: hue-rotate(120deg); }
+img:hover { filter: none; }
+figcaption { text-align: center; font-weight: bold; padding: 12px 4px 4px; }
+
+@media (max-width: 600px) {
+    .gallery { grid-template-columns: 1fr; }
+}

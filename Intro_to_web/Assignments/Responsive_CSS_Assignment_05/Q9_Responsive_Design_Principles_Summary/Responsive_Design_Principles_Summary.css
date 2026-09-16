@@ -1,0 +1,14 @@
+/* Responsive principles using CSS Grid */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #17202a; }
+main { width: min(1100px, 92%); margin: auto; }
+header { text-align: center; padding: 45px 0 25px; }
+.principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.principles article { padding: 28px; border-radius: 15px; background: white; box-shadow: 0 8px 22px rgba(0,0,0,.1); transition: background .3s, color .3s, transform .3s; }
+.principles article:hover { background: linear-gradient(135deg, #172554, #2563eb); color: white; transform: translateY(-6px); }
+pre { padding: 14px; overflow-x: auto; border-radius: 8px; background: #eef2f7; color: #17202a; }
+.principles article:hover pre { background: rgba(255,255,255,.15); color: white; }
+
+@media (max-width: 600px) {
+    .principles { grid-template-columns: 1fr; }
+}

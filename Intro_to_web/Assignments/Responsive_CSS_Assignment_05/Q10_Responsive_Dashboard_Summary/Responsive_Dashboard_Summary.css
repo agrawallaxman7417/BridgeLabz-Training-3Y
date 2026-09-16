@@ -1,0 +1,28 @@
+/* Dashboard uses CSS Grid for header, sidebar and content */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eef2f7; color: #17202a; }
+.dashboard { min-height: 100vh; display: grid; grid-template-columns: 230px 1fr; grid-template-rows: auto 1fr; }
+.header { grid-column: 1 / -1; padding: 22px 5%; background: #172554; color: white; }
+.header h1 { margin: 0 0 6px; }
+.header p { margin: 0; }
+.sidebar { padding: 25px; background: white; border-right: 1px solid #d7dee8; }
+.sidebar a { display: block; padding: 10px 0; color: #172554; text-decoration: none; transition: transform .2s; }
+.sidebar a:hover { transform: translateX(5px); }
+.content { padding: 30px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.content article { padding: 25px; background: white; border-radius: 14px; box-shadow: 0 5px 15px rgba(0,0,0,.08); animation: load .6s ease-in-out both; transition: transform .3s, box-shadow .3s; }
+.content article:hover { transform: scale(1.03); box-shadow: 0 12px 24px rgba(0,0,0,.15); }
+.content article:nth-child(2) { animation-delay: .1s; }
+.content article:nth-child(3) { animation-delay: .2s; }
+.content article:nth-child(4) { animation-delay: .3s; }
+code { background: #eef2f7; padding: 3px 6px; border-radius: 4px; }
+
+@keyframes load {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 750px) {
+    .dashboard { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+    .sidebar { border-right: 0; border-bottom: 1px solid #d7dee8; }
+    .sidebar a { display: inline-block; margin-right: 18px; }
+    .content { grid-template-columns: 1fr; }
+}
