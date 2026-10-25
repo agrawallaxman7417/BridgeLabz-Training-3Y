@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+        label { display: block; margin-top: 14px; }
+        input { box-sizing: border-box; width: 100%; padding: 10px; }
+        .error { color: #b00020; min-height: 18px; }
+        #result { margin-top: 16px; }
+        button { margin-top: 16px; padding: 10px 16px; }
+    </style>
+</head>
+<body>
+    <h1>Login Form Validation</h1>
+    <form id="loginForm" novalidate>
+        <label for="username">Username</label>
+        <input id="username" autocomplete="username">
+        <div id="usernameError" class="error"></div>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password">
+        <div id="passwordError" class="error"></div>
+
+        <button type="submit">Login</button>
+        <div id="result" role="status" aria-live="polite"></div>
+    </form>
+    <script src="Q7_Login_Form_Validation.js"></script>
+</body>
+</html>

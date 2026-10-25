@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form Validator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 520px; margin: 40px auto; padding: 0 16px; }
+        label { display: block; margin-top: 14px; }
+        input { box-sizing: border-box; width: 100%; padding: 10px; border: 2px solid #aaa; border-radius: 5px; }
+        input.valid { border-color: #16803c; }
+        input.invalid { border-color: #c62828; }
+        .error { color: #c62828; min-height: 18px; font-size: 0.9rem; }
+        #result { margin-top: 16px; font-weight: bold; }
+        button { margin-top: 16px; padding: 10px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form id="studentForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name">
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" autocomplete="email">
+        <div class="error" id="emailError"></div>
+
+        <label for="phone">Phone (10 digits)</label>
+        <input id="phone" name="phone" inputmode="numeric" autocomplete="tel">
+        <div class="error" id="phoneError"></div>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password">
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit">Register</button>
+        <div id="result" role="status" aria-live="polite"></div>
+    </form>
+
+    <script src="Q2_Student_Form_Validator.js"></script>
+</body>
+</html>
